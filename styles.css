@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  max-width: 1440px;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 0;
+  background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 12px;
+  color: var(--Very-dark-desaturated-blue);
+}
+main {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+
+  position: relative;
+}
+
+#card {
+  border-radius: 18px;
+  width: 900px;
+  background-color: white;
+}
+/*for left side*/
+.leftMain {
+  height: 500px;
+  padding: 0;
+
+  position: relative;
+}
+
+.imgHolder {
+  height: 100%;
+  border-radius: 18px;
+  position: relative;
+  overflow: hidden;
+}
+
+.imgBox {
+  width: 35%;
+  position: absolute;
+  top: 43%;
+  left: -24%;
+  z-index: 999;
+}
+.imgWoman {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: -8%;
+  transform: translate(-10%, -50%);
+  z-index: 8;
+}
+.imgBg {
+  width: 200%;
+  position: absolute;
+  top: -50%;
+  left: -117%;
+  z-index: 2;
+}
+
+/* this is right */
+h1 {
+  font-weight: 700;
+}
+.rightMain {
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+.accordion-button {
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  opacity: 1;
+  color: var(--Dark-grayish-blue);
+  font-weight: 400;
+}
+.accordion-button:focus {
+  border: none;
+  box-shadow: none;
+  outline: none;
+}
+.accordion-button:hover {
+  color: var(--Soft-red);
+}
+
+.accordion-button:not(.collapsed) {
+  color: var(--Very-dark-desaturated-blue);
+  font-weight: 700;
+  background-color: white;
+  box-shadow: none;
+}
+.accordion-button:not(.collapsed):hover {
+  color: var(--Soft-red);
+}
+
+.accordion-body {
+  opacity: 0.5;
+}
+:root {
+  --Very-dark-desaturated-blue: hsl(238, 29%, 16%);
+  --Soft-red: hsl(14, 88%, 65%);
+  --Soft-violet: hsl(273, 75%, 66%);
+  --Soft-blue: hsl(240, 73%, 65%);
+  --Very-dark-grayish-blue: hsl(237, 12%, 33%);
+  --Dark-grayish-blue: hsl(240, 6%, 50%);
+  --Light-grayish-blue: hsl(240, 5%, 91%);
+}
