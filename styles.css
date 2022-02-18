@@ -17,23 +17,23 @@ body {
   color: var(--Very-dark-desaturated-blue);
 }
 main {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-
+  padding-top: 80px;
   position: relative;
+  height: 100vh;
+  background-color: red;
 }
 
 #card {
   border-radius: 18px;
   width: 900px;
+  height: auto;
   background-color: white;
 }
+
 /*for left side*/
 .leftMain {
   height: 500px;
   padding: 0;
-
   position: relative;
 }
 
@@ -85,7 +85,6 @@ h1 {
   font-weight: 400;
 }
 .accordion-button:focus {
-  border: none;
   box-shadow: none;
   outline: none;
 }
